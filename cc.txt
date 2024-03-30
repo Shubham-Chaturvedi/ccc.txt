@@ -31,3 +31,10 @@ if [ $# -ne 1 ]; then
 fi
 
 is_armstrong $1
+
+
+after this enter chmod u+x file_name to give permission to execute
+after that on terminal write the below script
+bash file_name.sh 153 ----> o/p will be 153 is a armstrong number.
+bash file name.sh 14432314 ----> o/p will display 14432314 is not a armstrong number.
+
