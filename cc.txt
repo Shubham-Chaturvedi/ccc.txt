@@ -1,3 +1,4 @@
 cloud computing is awsome
 omkar is a student in dbda course
  kuch likhne ke baad commit changes karna hota hae.
+  shell script if given no is armstrong or not?????????
