@@ -2,3 +2,32 @@ cloud computing is awsome
 omkar is a student in dbda course
  kuch likhne ke baad commit changes karna hota hae.
   shell script if given no is armstrong or not?????????
+
+
+#!/bin/bash
+
+is_armstrong() {
+    num=$1
+    original_num=$num
+    num_of_digits=${#num}
+    sum=0
+
+    while [ $num -gt 0 ]; do
+        digit=$((num % 10))
+        sum=$((sum + digit ** num_of_digits))
+        num=$((num / 10))
+    done
+
+    if [ $sum -eq $original_num ]; then
+        echo "$original_num is an Armstrong number"
+    else
+        echo "$original_num is not an Armstrong number"
+    fi
+}
+
+if [ $# -ne 1 ]; then
+    echo "Usage: $0 <number>"
+    exit 1
+fi
+
+is_armstrong $1
